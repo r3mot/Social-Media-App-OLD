@@ -1,0 +1,78 @@
+@import "homepage.css";
+@import "feed.css";
+@import "profile.css";
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
+
+*{
+    fx-primary:  #424d57;
+    fx-secondary:  #bebebe;
+}
+
+
+#textField {
+    -fx-font-size: 30px;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+#btn{
+    -fx-background-radius: 20;
+    -fx-font-size: 12px;  
+}
+
+#btn:hover {
+    -fx-background-color:black;
+    -fx-text-fill:white;
+}
+
+#logOut {
+    -fx-background-color: fx-primary;
+    -fx-border-color: white;
+    -fx-text-fill:white;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-font-size: 12px;  
+}
+
+#logOut:hover {
+    -fx-background-color:black;
+    -fx-text-fill:white;
+}
+
+#txt {
+    -fx-effect: dropshadow(one-pass-box, fx-secondary,  10,0.5,10,5);
+    -fx-background-color: rgb(223, 217, 217);
+    -fx-prompt-text-fill: black;
+    -fx-border-color:black;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    
+}
+
+.signUp {
+    -fx-background-color: fx-primary;
+    -fx-border-radius: 20;
+    -fx-text-fill:white;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-font-size: 16;
+    -fx-font-weight: 10px;
+}
+
+.signUp:hover {
+    -fx-background-color: rgb(72, 66, 85);
+}
+
+.signIn {
+    -fx-background-color: fx-primary;
+    -fx-border-radius: 20;
+    -fx-text-fill:white;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-font-size: 16;
+    -fx-font-weight: 10px;
+}
+
+.signIn:hover {
+    -fx-background-color: rgb(63, 63, 124);
+}

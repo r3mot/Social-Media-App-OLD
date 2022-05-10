@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="profileAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="social.Controllers.ProfileController">
+   <children>
+      <Pane prefHeight="144.0" prefWidth="680.0">
+         <children>
+            <ImageView fitHeight="144.0" fitWidth="680.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Images/GUI/dream.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Circle fx:id="profilePicture" fill="DODGERBLUE" layoutX="323.0" layoutY="103.0" radius="72.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" />
+      <Label fx:id="name" alignment="CENTER" layoutX="223.0" layoutY="175.0" prefHeight="36.0" prefWidth="200.0" text="NAME">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TabPane layoutY="244.0" prefHeight="407.0" prefWidth="680.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab fx:id="postTab">
+              <content>
+                <AnchorPane fx:id="postAnchor" minHeight="0.0" minWidth="0.0" prefHeight="363.0" prefWidth="674.0">
+                     <children>
+                        <ScrollPane layoutY="7.0" prefHeight="371.0" prefWidth="680.0">
+                          <content>
+                            <AnchorPane fx:id="scrollAnchor" minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="682.0" />
+                          </content>
+                        </ScrollPane>
+                     </children></AnchorPane>
+              </content>
+               <graphic>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="192.0" text="Posts">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </Label>
+               </graphic>
+            </Tab>
+          <Tab fx:id="aboutTab" closable="false">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="394.0" prefWidth="677.0">
+                     <children>
+                        <Line endX="-100.0" endY="321.0" layoutX="418.0" layoutY="44.0" startX="-100.0" />
+                        <Label layoutX="82.0" layoutY="59.0" prefHeight="17.0" prefWidth="207.0" text="Major">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="82.0" layoutY="116.0" prefHeight="17.0" prefWidth="207.0" text="Standing">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="82.0" layoutY="173.0" prefHeight="17.0" prefWidth="207.0" text="Graduation Year">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="82.0" layoutY="230.0" prefHeight="17.0" prefWidth="207.0" text="Dream Job">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="major" alignment="TOP_LEFT" layoutX="352.0" layoutY="59.0" prefHeight="17.0" prefWidth="207.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="standing" alignment="TOP_LEFT" layoutX="352.0" layoutY="116.0" prefHeight="17.0" prefWidth="207.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="year" alignment="TOP_LEFT" layoutX="352.0" layoutY="173.0" prefHeight="17.0" prefWidth="207.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="job" alignment="TOP_LEFT" layoutX="352.0" layoutY="230.0" prefHeight="17.0" prefWidth="207.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="82.0" layoutY="287.0" prefHeight="17.0" prefWidth="207.0" text="Clubs">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="clubs" alignment="TOP_LEFT" layoutX="352.0" layoutY="287.0" prefHeight="88.0" prefWidth="315.0" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+               <graphic>
+                  <Label alignment="CENTER" prefHeight="42.0" prefWidth="201.0" text="About">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </Label>
+               </graphic>
+          </Tab>
+          <Tab fx:id="friendsTab" closable="false">
+            <content>
+              <AnchorPane fx:id="friendAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+               <graphic>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="194.0" text="Friends">
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </graphic>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

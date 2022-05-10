@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="profileAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="social.ProfileController">
+   <children>
+      <Label layoutX="179.0" layoutY="292.0" prefHeight="23.0" prefWidth="292.0" text="About  :" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="name" alignment="CENTER" layoutX="222.0" layoutY="188.0" prefHeight="36.0" prefWidth="200.0" text="NAME" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Pane id="friendPane" fx:id="friendsPane" layoutX="527.0" prefHeight="650.0" prefWidth="154.0">
+         <children>
+            <Label alignment="CENTER" layoutY="228.0" prefHeight="36.0" prefWidth="154.0" text="Friends" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Pane id="friendBG" fx:id="friend1" layoutY="274.0" prefHeight="82.0" prefWidth="154.0">
+               <children>
+                  <Circle fx:id="friend_image_one" fill="DODGERBLUE" layoutX="42.0" layoutY="41.0" onMouseClicked="#goToProfile" radius="28.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" styleClass="friendImage">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Circle>
+                  <Label fx:id="friendName1" layoutX="90.0" layoutY="33.0" prefHeight="17.0" prefWidth="82.0" text="NAME" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane id="friendBG" fx:id="friend2" layoutY="371.0" prefHeight="82.0" prefWidth="154.0">
+               <children>
+                  <Circle fx:id="friend_image_two" fill="DODGERBLUE" layoutX="42.0" layoutY="41.0" onMouseClicked="#goToProfile" radius="28.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" styleClass="friendImage">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Circle>
+                  <Label fx:id="friendName2" layoutX="90.0" layoutY="33.0" prefHeight="17.0" prefWidth="82.0" text="NAME" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane id="friendBG" fx:id="friend3" layoutY="465.0" prefHeight="82.0" prefWidth="154.0">
+               <children>
+                  <Circle fx:id="friend_image_three" fill="DODGERBLUE" layoutX="40.0" layoutY="42.0" onMouseClicked="#goToProfile" radius="28.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" styleClass="friendImage">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Circle>
+                  <Label fx:id="friendName3" layoutX="90.0" layoutY="34.0" prefHeight="17.0" prefWidth="82.0" text="NAME" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane id="friendBG" fx:id="friend4" layoutY="560.0" prefHeight="82.0" prefWidth="154.0">
+               <children>
+                  <Circle fx:id="friend_image_four" fill="DODGERBLUE" layoutX="42.0" layoutY="41.0" onMouseClicked="#goToProfile" radius="28.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" styleClass="friendImage">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Circle>
+                  <Label fx:id="friendName4" layoutX="90.0" layoutY="33.0" prefHeight="17.0" prefWidth="82.0" text="NAME" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children></Pane>
+      <TextField id="textfill" disable="true" editable="false" layoutX="174.0" layoutY="315.0" prefHeight="25.0" prefWidth="82.0" text="Major" />
+      <TextField id="textfill" disable="true" editable="false" layoutX="174.0" layoutY="340.0" prefHeight="25.0" prefWidth="82.0" text="Standing" />
+      <TextField id="textfill" disable="true" editable="false" layoutX="174.0" layoutY="365.0" prefHeight="25.0" prefWidth="82.0" text="Grad Year" />
+      <TextField id="textfill" disable="true" editable="false" layoutX="174.0" layoutY="390.0" prefHeight="25.0" prefWidth="82.0" text="Dream Job" />
+      <Label fx:id="major" layoutX="268.0" layoutY="319.0" prefHeight="17.0" prefWidth="200.0" text="Major" textFill="WHITE" />
+      <Label fx:id="standing" layoutX="268.0" layoutY="344.0" prefHeight="17.0" prefWidth="200.0" text="Standing" textFill="WHITE" />
+      <Label fx:id="year" layoutX="268.0" layoutY="369.0" prefHeight="17.0" prefWidth="200.0" text="Grad Year" textFill="WHITE" />
+      <Label fx:id="job" layoutX="268.0" layoutY="394.0" prefHeight="17.0" prefWidth="200.0" text="Dream Job" textFill="WHITE" />
+      <Pane prefHeight="103.0" prefWidth="680.0">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="680.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/GUI/go.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Circle fx:id="profilePicture" fill="DODGERBLUE" layoutX="322.0" layoutY="103.0" radius="60.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="social.AddPostController">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="79.0" layoutY="112.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="128.0" layoutY="103.0" prefHeight="17.0" prefWidth="99.0" text="Corey Mendrella" />
+      <TextArea fx:id="content" layoutX="53.0" layoutY="152.0" prefHeight="82.0" prefWidth="341.0" />
+      <Label alignment="CENTER" layoutX="144.0" layoutY="16.0" prefHeight="40.0" prefWidth="159.0" text="Create A Post">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button id="btn" fx:id="post" layoutX="56.0" layoutY="275.0" mnemonicParsing="false" onAction="#postToFeed" prefHeight="40.0" prefWidth="341.0" text="POST" />
+   </children>
+</AnchorPane>
